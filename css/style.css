@@ -1,0 +1,695 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.textWhite {
+  color: #fff; }
+
+.btn1 {
+  color: #097969;
+  background-color: #fff;
+  border: solid 1px #097969;
+  border-radius: 5px;
+  width: 125px;
+  height: 28px;
+  margin-top: 15;
+  margin-left: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none; }
+  .btn1:hover {
+    border: solid 1px #fff;
+    background-color: #097969;
+    color: #fff;
+    transition: 1s; }
+
+.btn2 {
+  color: #fff;
+  background-color: #097969;
+  border: solid 1px #097969;
+  border-radius: 5px;
+  width: 300px;
+  height: 28px;
+  margin-top: 15;
+  margin-left: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none; }
+
+header {
+  height: 90px;
+  background-color: #097969; }
+  header nav {
+    padding-top: 0%;
+    height: 100%; }
+    header nav #logo > img {
+      width: 200px;
+      margin: 17px 0 0 30px;
+      font-size: 17px; }
+    header nav #btn-menu {
+      display: none; }
+    header nav ul {
+      margin-left: auto;
+      list-style-type: none; }
+      header nav ul .nav-link {
+        color: #fff;
+        font-size: 17px;
+        font-family: Helvetica, Arial, sans-serif; }
+    header nav a {
+      text-decoration: none; }
+
+main {
+  height: 2500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main [data-anime] {
+    opacity: 0;
+    transition: 0.3s; }
+  main [data-anime="left"] {
+    transform: translate3d(-50px, 0, 0); }
+  main [data-anime="right"] {
+    transform: translate3d(50px, 0, 0); }
+  main [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px); }
+  main #welcome {
+    background-color: #097969;
+    height: 580px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center; }
+    main #welcome #titleTextDiv {
+      width: 100%; }
+      main #welcome #titleTextDiv #title,
+      main #welcome #titleTextDiv #text1 {
+        color: #fff; }
+      main #welcome #titleTextDiv #title {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 58px;
+        margin-top: 150px; }
+      main #welcome #titleTextDiv #text1 {
+        font-family: "Overpass", sans-serif;
+        font-size: 18px;
+        margin-top: 15px; }
+    main #welcome #btnDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main #welcome #btnDiv .btnWelcome {
+        color: #097969;
+        background-color: #fff;
+        border: solid 1px #097969;
+        border-radius: 5px;
+        width: 125px;
+        height: 28px;
+        margin-top: 15;
+        margin-left: 18px;
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: none; }
+        main #welcome #btnDiv .btnWelcome:hover {
+          border: solid 1px #fff;
+          background-color: #097969;
+          color: #fff;
+          transition: 1s; }
+  main #about {
+    background-color: #fff;
+    width: 100%;
+    height: 450px;
+    margin-top: 2%; }
+    main #about #title2 {
+      color: #000;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      margin-top: 8%; }
+    main #about .aboutText {
+      color: #000;
+      font-family: "Overpass", sans-serif;
+      font-size: 18px;
+      margin-top: 5%; }
+  main #products {
+    background-color: #097969;
+    width: 100%;
+    height: 800px;
+    margin-top: 70px; }
+    main #products #title3 {
+      font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
+      color: #fff;
+      padding-left: 5px;
+      margin-top: 10px; }
+    main #products #cardContainer {
+      width: 100%;
+      margin-top: 30px; }
+      main #products #cardContainer .cardsDiv {
+        display: flex;
+        height: 250px;
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-around; }
+        main #products #cardContainer .cardsDiv .card {
+          width: 18rem;
+          height: 240px;
+          cursor: pointer;
+          border-radius: 0;
+          border-color: #097969; }
+          main #products #cardContainer .cardsDiv .card:hover {
+            background-color: #fff;
+            border: none;
+            transition: 0.8s; }
+            main #products #cardContainer .cardsDiv .card:hover .cardTitle {
+              display: block; }
+            main #products #cardContainer .cardsDiv .card:hover .cardImg {
+              display: none; }
+          main #products #cardContainer .cardsDiv .card .cardImg {
+            height: 100%; }
+          main #products #cardContainer .cardsDiv .card .cardTitle {
+            color: #000;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            margin: 100px 0 0 30%;
+            display: none; }
+  main #jobs {
+    background-color: #fff;
+    width: 100%;
+    height: 680px;
+    margin-top: 2%; }
+    main #jobs #title4 {
+      color: #000;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      margin-top: 8%; }
+    main #jobs .jobsSubtitle {
+      color: #097969;
+      margin-top: 35px; }
+    main #jobs .jobsText {
+      color: #000;
+      font-family: "Overpass", sans-serif;
+      font-size: 18px;
+      margin-top: 3%; }
+    main #jobs #btnCv {
+      color: #fff;
+      background-color: #097969;
+      border: solid 1px #097969;
+      border-radius: 5px;
+      width: 160px;
+      height: 40px;
+      margin-top: 15;
+      margin-left: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      text-decoration: none; }
+
+@media (max-width: 375px) {
+  header nav ul {
+    background-color: #fff;
+    height: 380px;
+    text-align: center; }
+    header nav ul .nav-link {
+      color: #000;
+      font-size: 17px; }
+  header nav #logo > img {
+    width: 200px;
+    margin: 0px 0 0 30px;
+    font-size: 17px; }
+  header nav #btn-menu {
+    display: block;
+    margin-right: 40px; }
+
+  main {
+    height: 100%; }
+    main [data-anime="left"] {
+      transform: translate3d(0px, 0, 0); }
+    main [data-anime="right"] {
+      transform: translate3d(0px, 0, 0); }
+    main #welcome {
+      height: 450px;
+      width: 100%; }
+      main #welcome #titleTextDiv {
+        width: 100%; }
+        main #welcome #titleTextDiv #title {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 38px !important;
+          margin-top: 80px; }
+        main #welcome #titleTextDiv #text1 {
+          font-family: "Overpass", sans-serif;
+          font-size: 18px;
+          margin-top: 15px; }
+      main #welcome #btnDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    main #about {
+      height: 570px; }
+    main #products {
+      background-color: #097969;
+      width: 100%;
+      height: 1720px;
+      margin-top: 70px; }
+      main #products #title3 {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        color: #fff;
+        padding-left: 5px;
+        margin-top: 10px; }
+      main #products #cardContainer {
+        width: 100%;
+        margin-top: 30px; }
+        main #products #cardContainer .cardsDiv {
+          display: flex;
+          flex-direction: column;
+          height: 800px;
+          width: 100%;
+          margin-top: 10px;
+          justify-content: space-between; }
+          main #products #cardContainer .cardsDiv .card {
+            width: 100%;
+            height: 260px;
+            cursor: pointer;
+            border-radius: 0;
+            border-color: #097969;
+            margin-top: 30px; }
+            main #products #cardContainer .cardsDiv .card .cardImg {
+              height: 100%; }
+            main #products #cardContainer .cardsDiv .card .cardTitle {
+              text-align: center;
+              margin: 100px 0 0 33%;
+              display: none; }
+    main #jobs {
+      height: 870px; }
+      main #jobs #btnCv {
+        color: #fff;
+        background-color: #097969;
+        border: solid 1px #097969;
+        border-radius: 5px;
+        width: 100%;
+        height: 40px;
+        margin-top: 15;
+        margin-left: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: none; } }
+@media (min-width: 375px) and (max-width: 425px) {
+  header nav ul {
+    background-color: #fff;
+    height: 380px;
+    text-align: center; }
+    header nav ul .nav-link {
+      color: #000;
+      font-size: 17px; }
+  header nav #logo > img {
+    width: 200px;
+    margin: 0px 0 0 30px;
+    font-size: 17px; }
+  header nav #btn-menu {
+    display: block;
+    margin-right: 40px; }
+
+  main {
+    height: 100%; }
+    main [data-anime="left"] {
+      transform: translate3d(0px, 0, 0); }
+    main [data-anime="right"] {
+      transform: translate3d(0px, 0, 0); }
+    main #welcome {
+      height: 450px;
+      width: 100%; }
+      main #welcome #titleTextDiv {
+        width: 100%; }
+        main #welcome #titleTextDiv #title {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 38px !important;
+          margin-top: 80px; }
+        main #welcome #titleTextDiv #text1 {
+          font-family: "Overpass", sans-serif;
+          font-size: 18px;
+          margin-top: 15px; }
+      main #welcome #btnDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    main #about {
+      height: 570px; }
+    main #products {
+      background-color: #097969;
+      width: 100%;
+      height: 1800px;
+      margin-top: 70px; }
+      main #products #title3 {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        color: #fff;
+        padding-left: 5px;
+        margin-top: 10px; }
+      main #products #cardContainer {
+        width: 100%;
+        margin-top: 5px; }
+        main #products #cardContainer .cardsDiv {
+          display: flex;
+          flex-direction: column;
+          height: 800px;
+          width: 100%;
+          margin-top: 20px;
+          justify-content: space-between; }
+          main #products #cardContainer .cardsDiv .card {
+            width: 100%;
+            height: 260px;
+            cursor: pointer;
+            border-radius: 0;
+            border-color: #097969;
+            margin-top: 30px; }
+            main #products #cardContainer .cardsDiv .card .cardImg {
+              height: 100%; }
+            main #products #cardContainer .cardsDiv .card .cardTitle {
+              text-align: center;
+              margin: 85px 0 0 35%;
+              display: none; }
+    main #jobs {
+      height: 890px; }
+      main #jobs #btnCv {
+        width: 100%; } }
+@media (min-width: 425px) and (max-width: 486px) {
+  header nav ul {
+    background-color: #fff;
+    height: 380px;
+    text-align: center; }
+    header nav ul .nav-link {
+      color: #000;
+      font-size: 17px; }
+  header nav #logo > img {
+    width: 200px;
+    margin: 0px 0 0 30px;
+    font-size: 17px; }
+  header nav #btn-menu {
+    display: block;
+    margin-right: 40px; }
+
+  main {
+    height: 100%; }
+    main [data-anime="left"] {
+      transform: translate3d(0px, 0, 0); }
+    main [data-anime="right"] {
+      transform: translate3d(0px, 0, 0); }
+    main #welcome {
+      height: 450px;
+      width: 100%; }
+      main #welcome #titleTextDiv {
+        width: 100%; }
+        main #welcome #titleTextDiv #title {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 38px !important;
+          margin-top: 80px; }
+        main #welcome #titleTextDiv #text1 {
+          font-family: "Overpass", sans-serif;
+          font-size: 18px;
+          margin-top: 15px; }
+      main #welcome #btnDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    main #about {
+      height: 570px; }
+    main #products {
+      background-color: #097969;
+      width: 100%;
+      height: 2200px;
+      margin-top: 70px; }
+      main #products #title3 {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        color: #fff;
+        padding-left: 5px;
+        margin-top: 10px; }
+      main #products #cardContainer {
+        width: 100%;
+        margin-top: 5px; }
+        main #products #cardContainer .cardsDiv {
+          display: flex;
+          flex-direction: column;
+          height: 1000px;
+          width: 100%;
+          margin-top: 20px;
+          justify-content: space-between; }
+          main #products #cardContainer .cardsDiv .card {
+            width: 100%;
+            height: 260px;
+            cursor: pointer;
+            border-radius: 0;
+            border-color: #097969;
+            margin-top: 70px; }
+            main #products #cardContainer .cardsDiv .card .cardImg {
+              height: 100%; }
+            main #products #cardContainer .cardsDiv .card .cardTitle {
+              text-align: center;
+              margin: 120px 0 0 36%;
+              display: none; }
+    main #jobs {
+      height: 920px; }
+      main #jobs #btnCv {
+        width: 100%; } }
+@media (min-width: 486px) and (max-width: 550px) {
+  header nav ul {
+    background-color: #fff;
+    height: 380px;
+    text-align: center; }
+    header nav ul .nav-link {
+      color: #000;
+      font-size: 17px; }
+  header nav #logo > img {
+    width: 200px;
+    margin: 0px 0 0 30px;
+    font-size: 17px; }
+  header nav #btn-menu {
+    display: block;
+    margin-right: 40px; }
+
+  main {
+    height: 100%; }
+    main [data-anime="left"] {
+      transform: translate3d(0px, 0, 0); }
+    main [data-anime="right"] {
+      transform: translate3d(0px, 0, 0); }
+    main #welcome {
+      height: 450px;
+      width: 100%; }
+      main #welcome #titleTextDiv {
+        width: 100%; }
+        main #welcome #titleTextDiv #title {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 38px !important;
+          margin-top: 80px; }
+        main #welcome #titleTextDiv #text1 {
+          font-family: "Overpass", sans-serif;
+          font-size: 18px;
+          margin-top: 15px; }
+      main #welcome #btnDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    main #about {
+      height: 610px; }
+    main #products {
+      background-color: #097969;
+      width: 100%;
+      height: 2200px;
+      margin-top: 70px; }
+      main #products #title3 {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        color: #fff;
+        padding-left: 5px;
+        margin-top: 10px; }
+      main #products #cardContainer {
+        width: 100%;
+        margin-top: 5px; }
+        main #products #cardContainer .cardsDiv {
+          display: flex;
+          flex-direction: column;
+          height: 1000px;
+          width: 100%;
+          margin-top: 20px;
+          justify-content: space-between; }
+          main #products #cardContainer .cardsDiv .card {
+            width: 100%;
+            height: 260px;
+            cursor: pointer;
+            border-radius: 0;
+            border-color: #097969;
+            margin-top: 70px; }
+            main #products #cardContainer .cardsDiv .card .cardImg {
+              height: 100%; }
+            main #products #cardContainer .cardsDiv .card .cardTitle {
+              text-align: center;
+              margin: 120px 0 0 36%;
+              display: none; }
+    main #jobs {
+      height: 930px; }
+      main #jobs #btnCv {
+        width: 100%; } }
+@media (min-width: 550px) and (max-width: 576px) {
+  header nav ul {
+    background-color: #fff;
+    height: 300px;
+    text-align: center; }
+    header nav ul .nav-link {
+      color: #000;
+      font-size: 17px; }
+  header nav #logo > img {
+    width: 200px;
+    margin: 0px 0 0 30px;
+    font-size: 17px; }
+  header nav #btn-menu {
+    display: block;
+    margin-right: 40px; }
+
+  main {
+    height: 100%; }
+    main [data-anime="left"] {
+      transform: translate3d(0px, 0, 0); }
+    main [data-anime="right"] {
+      transform: translate3d(0px, 0, 0); }
+    main #welcome {
+      height: 380px;
+      width: 100%; }
+      main #welcome #titleTextDiv {
+        width: 100%; }
+        main #welcome #titleTextDiv #title {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 38px !important;
+          margin-top: 80px; }
+        main #welcome #titleTextDiv #text1 {
+          font-family: "Overpass", sans-serif;
+          font-size: 18px;
+          margin-top: 15px; }
+      main #welcome #btnDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    main #about {
+      height: 640px; }
+    main #products {
+      background-color: #097969;
+      width: 100%;
+      height: 2200px;
+      margin-top: 70px; }
+      main #products #title3 {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        color: #fff;
+        padding-left: 5px;
+        margin-top: 10px; }
+      main #products #cardContainer {
+        width: 100%;
+        margin-top: 5px; }
+        main #products #cardContainer .cardsDiv {
+          display: flex;
+          flex-direction: column;
+          height: 1000px;
+          width: 100%;
+          margin-top: 20px;
+          justify-content: space-between; }
+          main #products #cardContainer .cardsDiv .card {
+            width: 100%;
+            height: 260px;
+            cursor: pointer;
+            border-radius: 0;
+            border-color: #097969;
+            margin-top: 70px; }
+            main #products #cardContainer .cardsDiv .card .cardImg {
+              height: 100%; }
+            main #products #cardContainer .cardsDiv .card .cardTitle {
+              text-align: center;
+              margin: 120px 0 0 36%;
+              display: none; }
+    main #jobs {
+      height: 920px; }
+      main #jobs #btnCv {
+        width: 100%; } }
+@media (min-width: 576px) and (max-width: 625px) {
+  header {
+    background-color: #097969; }
+    header nav ul {
+      background-color: #fff;
+      height: 0;
+      text-align: center; }
+      header nav ul .nav-link {
+        color: #fff;
+        font-size: 17px; }
+    header nav #logo > img {
+      width: 150px;
+      margin: 40px 0 0 15px;
+      font-size: 17px; }
+    header nav #btn-menu {
+      display: none; }
+
+  main {
+    height: 100%; }
+    main [data-anime="left"] {
+      transform: translate3d(0px, 0, 0); }
+    main [data-anime="right"] {
+      transform: translate3d(0px, 0, 0); }
+    main #welcome {
+      height: 380px;
+      width: 100%; }
+      main #welcome #titleTextDiv {
+        width: 100%; }
+        main #welcome #titleTextDiv #title {
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 38px !important;
+          margin-top: 80px; }
+        main #welcome #titleTextDiv #text1 {
+          font-family: "Overpass", sans-serif;
+          font-size: 18px;
+          margin-top: 15px; }
+      main #welcome #btnDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    main #about {
+      height: 600px; }
+    main #products {
+      background-color: #097969;
+      width: 100%;
+      height: 900px;
+      margin-top: 70px; }
+      main #products #title3 {
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+        color: #fff;
+        padding-left: 5px;
+        margin-top: 10px; }
+      main #products #cardContainer {
+        width: 100%;
+        margin-top: 5px; }
+        main #products #cardContainer .cardsDiv {
+          display: flex;
+          flex-direction: row;
+          height: 400px;
+          width: 100%;
+          margin-top: 20px;
+          justify-content: space-between; }
+          main #products #cardContainer .cardsDiv .card {
+            width: 200px;
+            height: 260px;
+            margin-left: 3px;
+            cursor: pointer;
+            border-radius: 0;
+            border-color: #097969;
+            margin-top: 0px; }
+            main #products #cardContainer .cardsDiv .card .cardImg {
+              height: 100%; }
+            main #products #cardContainer .cardsDiv .card .cardTitle {
+              text-align: center;
+              margin: 120px 0 0 16%;
+              display: none; }
+    main #jobs {
+      height: 920px; }
+      main #jobs #btnCv {
+        width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Market</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Link do Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Overpass -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Inicio Menu de navegação -->
+        <nav class="navbar navbar-expand-sm d-flex justify-content-between">
+            <!-- Logo -->
+            <div>
+                <a href="#" id="logo">
+                    <img src="images/logo.png" alt="we market">
+                </a>
+            </div>
+
+            <!-- botao hamburguer -->
+            <a id="btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/icon-hamburger.svg" alt="menu">
+            </a>
+
+            <!-- lista de itens -->
+            <div class="collapse navbar-collapse" id="menu-navegacao">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link list-item">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link list-item">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link list-item">Produtos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#jobs" class="nav-link list-item">Vagas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link list-item">Patrocinadores</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- fim lista de itens -->
+        </nav>
+        <!-- Fim Menu de navegação -->
+    </header>
+
+    <main>
+        <section class="container-fluid" id="welcome">
+            <div class="row">
+                <div class="col-12">
+                    <div id="titleTextDiv">
+                        <h1 id="title">Bem-vindos ao We Market!</h1>
+                        <p id="text1">Comercializamos produtos que atendem a sua necessidade</p>
+
+                        <div id="btnDiv">
+                            <a href="#products" class="btnWelcome">Produtos</a>
+                            <a href="#" class="btnWelcome">Endereço</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="about">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="aboutDiv">
+                        <h3 id="title2" data-anime="left">Sobre</h3>
+
+                        <p class="aboutText" data-anime="left">Fundada em 01 de março de 2023, a We Market foi criada
+                            com o objetivo
+                            de fornecer produtos da mais alta qualidade a nossos clientes.
+                        </p>
+
+                        <p class="aboutText" data-anime="left">Contamos com uma equipe de funcionários que estão sempre
+                            comprometidos a
+                            entregar o melhor resultado. Prestando um atendimento humanizado, visando sempre atender a
+                            satisfação e
+                            proporcionar uma excelente experiência aos nossos clientes.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div id="imgDiv" data-anime="left">
+                        <img id="imgAbout" src="images/collaborators.png" class="img-fluid"
+                            alt="homem e mulher conversando">
+                    </div>
+                </div>
+        </section>
+
+        <section class="container-fluid" id="products">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h3 id="title3">Nossos Produtos</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div id="cardContainer" data-anime="right">
+                        <div class="cardsDiv">
+                            <div class="card" onclick="tabelaPadaria()">
+                                <img class="cardImg" src="./images/desktop/pao.jpg">
+                                <h3 class="cardTitle">Padaria</h3>
+                            </div>
+
+                            <div class="card">
+                                <img class="cardImg" src="./images/desktop/carne.jpg">
+                                <h3 class="cardTitle">Carnes</h3>
+                            </div>
+
+                            <div class="card">
+                                <img class="cardImg" src="./images/desktop/bebida.jpg">
+                                <h3 class="cardTitle">Bebidas</h3>
+                            </div>
+                        </div>
+
+                        <div class="cardsDiv">
+                            <div class="card">
+                                <img class="cardImg" src="./images/desktop/frutas.jpg">
+                                <h3 class="cardTitle">Frutas</h3>
+                            </div>
+
+                            <div class="card">
+                                <img class="cardImg" src="./images/desktop/comida.jpg">
+                                <h3 class="cardTitle">Comidas</h3>
+                            </div>
+
+                            <div class="card">
+                                <img class="cardImg" src="./images/desktop/limpeza.jpg">
+                                <h3 class="cardTitle">Limpeza</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="jobs">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="imgDiv" data-anime="left">
+                        <img id="imgJobs" src="images/enterview.png" class="img-fluid" alt="dois homens conversando">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div id="jobsDiv">
+                        <h3 id="title4" data-anime="left">Junte-se a nosso time</h3>
+
+                        <h3 class="jobsSubtitle" data-anime="left">Vagas</h3>
+                        <p class="jobsText" data-anime="left">Atualmente temos vagas para atuar como: operador(a) de
+                            caixa, balconista,
+                            encarregado(a) de estoque, repositor(a) de mercadorias, empacotador(a), auxiliar de
+                            limpeza e ajudante geral.
+                        </p>
+
+                        <h3 class="jobsSubtitle" data-anime="left">Candidatura</h3>
+                        <p class="jobsText" data-anime="left">Nos envie um e-mail contendo seu currículo e uma mensagem
+                            dizendo qual vaga
+                            é do seu interesse, que entraremos em contato se seu perfil for compatível com as vagas.</p>
+
+                        <a href="mailto:mickaelbpsouza@gmail.com" data-anime="left">
+                            <button id="btnCv" class="btn">Enviar Currículo</button>
+                        </a>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="js/tables.js"></script>
+    <script src="js/animations.js"></script>
+    <!-- link bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

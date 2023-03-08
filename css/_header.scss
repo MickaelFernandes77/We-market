@@ -1,0 +1,35 @@
+header {
+  height: 90px;
+  background-color: $green;
+  
+
+  nav {
+    padding-top: 0%;
+    height: 100%;
+
+    #logo > img {
+      width: 200px;
+      margin: 17px 0 0 30px;
+      font-size: 17px;
+    }
+
+    #btn-menu {
+      display: none;
+    }
+
+    ul {
+      margin-left: auto;
+      list-style-type: none;
+
+      .nav-link {
+        color: $white;
+        font-size: 17px;
+        font-family: $font1;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
