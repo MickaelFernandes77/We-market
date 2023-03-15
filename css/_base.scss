@@ -10,38 +10,28 @@ $font2: "Overpass", sans-serif;
   box-sizing: border-box;
 }
 
-.textWhite {
+.textWhite{
   color: $white;
 }
 
-.btn1 {
-  color: $green;
-  background-color: $white;
-  border: solid 1px $green;
-  border-radius: 5px;
-  width: 125px;
-  height: 28px;
-  margin-top: 15;
-  margin-left: 18px;
-  font-family: $font1;
-  text-decoration: none;
-  &:hover {
-    border: solid 1px $white;
-    background-color: $green;
-    color: $white;
-    transition: 1s;
-  }
+/* esconder scrollbar no: chrome, safari, edge, opera */
+
+::-webkit-scrollbar {
+  display: none;
 }
 
-.btn2 {
-  color: $white;
-  background-color: $green;
-  border: solid 1px $green;
-  border-radius: 5px;
-  width: 300px;
-  height: 28px;
-  margin-top: 15;
-  margin-left: 18px;
-  font-family: $font1;
+/* esconder scrollbar no: internet explorer*/
+body {
+  -ms-overflow-style: none;
+}
+
+/* esconder scrollbar no: firefox*/
+html {
+  scrollbar-width: none;
+}
+
+a {
   text-decoration: none;
+  list-style: none;
+  outline: none;
 }

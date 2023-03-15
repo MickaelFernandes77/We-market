@@ -6,34 +6,22 @@
 .textWhite {
   color: #fff; }
 
-.btn1 {
-  color: #097969;
-  background-color: #fff;
-  border: solid 1px #097969;
-  border-radius: 5px;
-  width: 125px;
-  height: 28px;
-  margin-top: 15;
-  margin-left: 18px;
-  font-family: Helvetica, Arial, sans-serif;
-  text-decoration: none; }
-  .btn1:hover {
-    border: solid 1px #fff;
-    background-color: #097969;
-    color: #fff;
-    transition: 1s; }
+/* esconder scrollbar no: chrome, safari, edge, opera */
+::-webkit-scrollbar {
+  display: none; }
 
-.btn2 {
-  color: #fff;
-  background-color: #097969;
-  border: solid 1px #097969;
-  border-radius: 5px;
-  width: 300px;
-  height: 28px;
-  margin-top: 15;
-  margin-left: 18px;
-  font-family: Helvetica, Arial, sans-serif;
-  text-decoration: none; }
+/* esconder scrollbar no: internet explorer*/
+body {
+  -ms-overflow-style: none; }
+
+/* esconder scrollbar no: firefox*/
+html {
+  scrollbar-width: none; }
+
+a {
+  text-decoration: none;
+  list-style: none;
+  outline: none; }
 
 header {
   height: 90px;
@@ -58,7 +46,7 @@ header {
       text-decoration: none; }
 
 main {
-  height: 3400px;
+  height: 3220px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -74,7 +62,7 @@ main {
     transform: translate3d(0px, 0px, 0px); }
   main #welcome {
     background-color: #097969;
-    height: 700px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -100,10 +88,10 @@ main {
       main #welcome #btnDiv .btnWelcome {
         color: #097969;
         background-color: #fff;
-        border: solid 1px #097969;
+        border: none;
         border-radius: 5px;
         width: 125px;
-        height: 28px;
+        height: 32px;
         margin-top: 15;
         margin-left: 18px;
         font-family: Helvetica, Arial, sans-serif;
@@ -225,8 +213,7 @@ main {
       font-family: Helvetica, Arial, sans-serif;
       text-decoration: none; }
   main #sponsors {
-    height: 800px;
-    margin-top: 90px; }
+    height: 450px; }
     main #sponsors #title5 {
       color: #097969;
       text-align: center; }
@@ -258,7 +245,30 @@ main {
           color: #fff; }
 
 footer {
+  height: 300px;
   background-color: #097969; }
+  footer #footerContainer {
+    display: flex;
+    justify-content: space-around; }
+    footer #footerContainer #footerLogo {
+      width: 250px;
+      cursor: pointer; }
+    footer #footerContainer #footerTitle {
+      color: #fff;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 28px;
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    footer #footerContainer .footerText {
+      color: #fff;
+      font-family: "Overpass", sans-serif;
+      font-size: 20px;
+      margin-top: 7px; }
+      footer #footerContainer .footerText .footerIcon {
+        font-size: 22px;
+        margin-right: 10px; }
+    footer #footerContainer #copyright {
+      margin-left: 20px; }
 
 @media (max-width: 375px) {
   header nav ul {
@@ -300,17 +310,11 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 650px; }
+      height: 700px; }
     main #products {
       width: 100%;
       height: 1800px;
       margin-top: 70px; }
-      main #products #title3 {
-        font-family: Helvetica, Arial, sans-serif;
-        text-align: center;
-        color: #fff;
-        padding-left: 5px;
-        margin-top: 10px; }
       main #products #cardContainer {
         width: 100%;
         margin-top: 30px; }
@@ -349,7 +353,7 @@ footer {
         font-family: Helvetica, Arial, sans-serif;
         text-decoration: none; }
     main #sponsors {
-      height: 1150px;
+      height: 1000px;
       margin-top: 10px; }
       main #sponsors #sponsorsImages {
         display: flex;
@@ -363,7 +367,27 @@ footer {
           main #sponsors #sponsorsImages .imgSponsors:hover {
             width: 100%; }
       main #sponsors .modal {
-        width: 100%; } }
+        width: 100%; }
+
+  footer {
+    height: 500px;
+    background-color: #097969; }
+    footer #footerContainer {
+      flex-direction: column-reverse;
+      justify-content: center; }
+      footer #footerContainer #footerLogo {
+        width: 82%;
+        margin-left: 8%; }
+      footer #footerContainer #footerTitle {
+        font-size: 22px;
+        text-align: center; }
+      footer #footerContainer .footerText {
+        text-align: center; }
+        footer #footerContainer .footerText .footerIcon {
+          font-size: 22px;
+          margin-right: 7px; }
+      footer #footerContainer #copyright {
+        margin-left: 0px; } }
 @media (min-width: 375px) and (max-width: 425px) {
   header nav ul {
     background-color: #fff;
@@ -409,9 +433,6 @@ footer {
       width: 100%;
       height: 1800px;
       margin-top: 70px; }
-      main #products #title3 {
-        padding-left: 5px;
-        margin-top: 10px; }
       main #products #cardContainer {
         width: 100%;
         margin-top: 5px; }
@@ -441,7 +462,7 @@ footer {
       main #jobs #btnCv {
         width: 100%; }
     main #sponsors {
-      height: 1150px;
+      height: 1280px;
       margin-top: 10px; }
       main #sponsors #sponsorsImages {
         display: flex;
@@ -455,7 +476,27 @@ footer {
           main #sponsors #sponsorsImages .imgSponsors:hover {
             width: 100%; }
       main #sponsors .modal {
-        width: 100%; } }
+        width: 100%; }
+
+  footer {
+    height: 500px;
+    background-color: #097969; }
+    footer #footerContainer {
+      flex-direction: column-reverse;
+      justify-content: center; }
+      footer #footerContainer #footerLogo {
+        width: 82%;
+        margin-left: 8%; }
+      footer #footerContainer #footerTitle {
+        font-size: 22px;
+        text-align: center; }
+      footer #footerContainer .footerText {
+        text-align: center; }
+        footer #footerContainer .footerText .footerIcon {
+          font-size: 22px;
+          margin-right: 7px; }
+      footer #footerContainer #copyright {
+        margin-left: 0px; } }
 @media (min-width: 425px) and (max-width: 486px) {
   header nav ul {
     background-color: #fff;
@@ -501,9 +542,6 @@ footer {
       width: 100%;
       height: 2200px;
       margin-top: 70px; }
-      main #products #title3 {
-        padding-left: 5px;
-        margin-top: 10px; }
       main #products #cardContainer {
         width: 100%;
         margin-top: 5px; }
@@ -546,7 +584,27 @@ footer {
           main #sponsors #sponsorsImages .imgSponsors:hover {
             width: 100%; }
       main #sponsors .modal {
-        width: 100%; } }
+        width: 100%; }
+
+  footer {
+    height: 500px;
+    background-color: #097969; }
+    footer #footerContainer {
+      flex-direction: column-reverse;
+      justify-content: center; }
+      footer #footerContainer #footerLogo {
+        width: 82%;
+        margin-left: 8%; }
+      footer #footerContainer #footerTitle {
+        font-size: 22px;
+        text-align: center; }
+      footer #footerContainer .footerText {
+        text-align: center; }
+        footer #footerContainer .footerText .footerIcon {
+          font-size: 22px;
+          margin-right: 7px; }
+      footer #footerContainer #copyright {
+        margin-left: 0px; } }
 @media (min-width: 486px) and (max-width: 550px) {
   header nav ul {
     background-color: #fff;
@@ -592,9 +650,6 @@ footer {
       width: 100%;
       height: 2200px;
       margin-top: 70px; }
-      main #products #title3 {
-        padding-left: 5px;
-        margin-top: 10px; }
       main #products #cardContainer {
         width: 100%;
         margin-top: 5px; }
@@ -623,7 +678,7 @@ footer {
       main #jobs #btnCv {
         width: 100%; }
     main #sponsors {
-      height: 1150px;
+      height: 1650px;
       margin-top: 10px; }
       main #sponsors #sponsorsImages {
         display: flex;
@@ -637,7 +692,27 @@ footer {
           main #sponsors #sponsorsImages .imgSponsors:hover {
             width: 100%; }
       main #sponsors .modal {
-        width: 100%; } }
+        width: 100%; }
+
+  footer {
+    height: 500px;
+    background-color: #097969; }
+    footer #footerContainer {
+      flex-direction: column-reverse;
+      justify-content: center; }
+      footer #footerContainer #footerLogo {
+        width: 82%;
+        margin-left: 8%; }
+      footer #footerContainer #footerTitle {
+        font-size: 22px;
+        text-align: center; }
+      footer #footerContainer .footerText {
+        text-align: center; }
+        footer #footerContainer .footerText .footerIcon {
+          font-size: 22px;
+          margin-right: 7px; }
+      footer #footerContainer #copyright {
+        margin-left: 0px; } }
 @media (min-width: 550px) and (max-width: 576px) {
   header nav ul {
     background-color: #fff;
@@ -683,9 +758,6 @@ footer {
       width: 100%;
       height: 2200px;
       margin-top: 70px; }
-      main #products #title3 {
-        padding-left: 5px;
-        margin-top: 10px; }
       main #products #cardContainer {
         width: 100%;
         margin-top: 5px; }
@@ -777,9 +849,6 @@ footer {
       width: 100%;
       height: 2200px;
       margin-top: 70px; }
-      main #products #title3 {
-        padding-left: 5px;
-        margin-top: 10px; }
       main #products #cardContainer {
         width: 100%;
         margin-top: 5px; }
@@ -871,9 +940,6 @@ footer {
       width: 100%;
       height: 900px;
       margin-top: 70px; }
-      main #products #title3 {
-        padding-left: 5px;
-        margin-top: 10px; }
       main #products #cardContainer {
         width: 100%;
         margin-top: 5px; }
@@ -945,9 +1011,6 @@ footer {
       width: 100%;
       height: 900px;
       margin-top: 70px; }
-      main #products #title3 {
-        padding-left: 5px;
-        margin-top: 10px; }
       main #products #cardContainer {
         width: 100%;
         margin-top: 5px; }
@@ -1023,9 +1086,6 @@ footer {
       width: 100%;
       height: 800px;
       margin-top: 70px; }
-      main #products #title3 {
-        padding-left: 5px;
-        margin-top: 10px; }
     main #jobs {
       height: 700px; }
       main #jobs #btnCv {
