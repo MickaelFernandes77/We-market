@@ -128,8 +128,25 @@ main {
       font-family: "Overpass", sans-serif;
       font-size: 18px;
       margin-top: 5%; }
+      main #about .aboutText .linkProject {
+        color: #097969; }
     main #about #imgAbout {
       width: 100%; }
+    main #about .modal {
+      width: 100%; }
+      main #about .modal .modal-content {
+        background-color: #097969;
+        color: #fff; }
+        main #about .modal .modal-content .modal-title {
+          text-transform: uppercase;
+          font-family: Helvetica, Arial, sans-serif; }
+        main #about .modal .modal-content .modal-body > .text {
+          font-family: "Overpass", sans-serif;
+          font-size: 18px; }
+        main #about .modal .modal-content .btn-modal {
+          background: #097969;
+          border: solid 1px #fff;
+          color: #fff; }
   main #products {
     background-color: #097969;
     width: 100%;
@@ -283,10 +300,10 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 570px; }
+      height: 650px; }
     main #products {
       width: 100%;
-      height: 1720px;
+      height: 1800px;
       margin-top: 70px; }
       main #products #title3 {
         font-family: Helvetica, Arial, sans-serif;
@@ -302,19 +319,22 @@ footer {
           flex-direction: column;
           height: 800px;
           width: 100%;
-          margin-top: 10px;
+          margin-top: 15px;
           justify-content: space-between; }
           main #products #cardContainer .cardsDiv .card {
             width: 100%;
             height: 260px;
             border-radius: 0;
-            border-color: #097969;
-            margin-top: 30px; }
+            border-color: #097969; }
+            main #products #cardContainer .cardsDiv .card:hover {
+              background-color: unset !important;
+              transition: unset !important; }
+              main #products #cardContainer .cardsDiv .card:hover .cardTitle {
+                display: none; }
+              main #products #cardContainer .cardsDiv .card:hover .cardImg {
+                display: block; }
             main #products #cardContainer .cardsDiv .card .cardImg {
               height: 100%; }
-            main #products #cardContainer .cardsDiv .card .cardTitle {
-              margin: 100px 0 0 33%;
-              display: none; }
     main #jobs {
       height: 870px; }
       main #jobs #btnCv {
@@ -384,7 +404,7 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 570px; }
+      height: 680px; }
     main #products {
       width: 100%;
       height: 1800px;
@@ -406,13 +426,16 @@ footer {
             width: 100%;
             height: 260px;
             border-radius: 0;
-            border-color: #097969;
-            margin-top: 30px; }
+            border-color: #097969; }
+            main #products #cardContainer .cardsDiv .card:hover {
+              background-color: unset !important;
+              transition: unset !important; }
+              main #products #cardContainer .cardsDiv .card:hover .cardTitle {
+                display: none; }
+              main #products #cardContainer .cardsDiv .card:hover .cardImg {
+                display: block; }
             main #products #cardContainer .cardsDiv .card .cardImg {
               height: 100%; }
-            main #products #cardContainer .cardsDiv .card .cardTitle {
-              margin: 85px 0 0 35%;
-              display: none; }
     main #jobs {
       height: 890px; }
       main #jobs #btnCv {
@@ -473,7 +496,7 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 570px; }
+      height: 670px; }
     main #products {
       width: 100%;
       height: 2200px;
@@ -489,19 +512,21 @@ footer {
           flex-direction: column;
           height: 1000px;
           width: 100%;
-          margin-top: 20px;
           justify-content: space-between; }
           main #products #cardContainer .cardsDiv .card {
             width: 100%;
             height: 260px;
             border-radius: 0;
-            border-color: #097969;
-            margin-top: 70px; }
+            border-color: #097969; }
+            main #products #cardContainer .cardsDiv .card:hover {
+              background-color: unset !important;
+              transition: unset !important; }
+              main #products #cardContainer .cardsDiv .card:hover .cardTitle {
+                display: none; }
+              main #products #cardContainer .cardsDiv .card:hover .cardImg {
+                display: block; }
             main #products #cardContainer .cardsDiv .card .cardImg {
               height: 100%; }
-            main #products #cardContainer .cardsDiv .card .cardTitle {
-              margin: 120px 0 0 36%;
-              display: none; }
     main #jobs {
       height: 920px; }
       main #jobs #btnCv {
@@ -562,7 +587,7 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 610px; }
+      height: 700px; }
     main #products {
       width: 100%;
       height: 2200px;
@@ -578,19 +603,21 @@ footer {
           flex-direction: column;
           height: 1000px;
           width: 100%;
-          margin-top: 20px;
           justify-content: space-between; }
           main #products #cardContainer .cardsDiv .card {
             width: 100%;
             height: 260px;
             border-radius: 0;
-            border-color: #097969;
-            margin-top: 70px; }
+            border-color: #097969; }
+            main #products #cardContainer .cardsDiv .card:hover {
+              background-color: unset !important;
+              transition: unset !important; }
+              main #products #cardContainer .cardsDiv .card:hover .cardTitle {
+                display: none; }
+              main #products #cardContainer .cardsDiv .card:hover .cardImg {
+                display: block; }
             main #products #cardContainer .cardsDiv .card .cardImg {
               height: 100%; }
-            main #products #cardContainer .cardsDiv .card .cardTitle {
-              margin: 120px 0 0 36%;
-              display: none; }
     main #jobs {
       height: 930px; }
       main #jobs #btnCv {
@@ -651,7 +678,7 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 640px; }
+      height: 700px; }
     main #products {
       width: 100%;
       height: 2200px;
@@ -675,11 +702,15 @@ footer {
             border-radius: 0;
             border-color: #097969;
             margin-top: 70px; }
+            main #products #cardContainer .cardsDiv .card:hover {
+              background-color: unset !important;
+              transition: unset !important; }
+              main #products #cardContainer .cardsDiv .card:hover .cardTitle {
+                display: none; }
+              main #products #cardContainer .cardsDiv .card:hover .cardImg {
+                display: block; }
             main #products #cardContainer .cardsDiv .card .cardImg {
               height: 100%; }
-            main #products #cardContainer .cardsDiv .card .cardTitle {
-              margin: 120px 0 0 36%;
-              display: none; }
     main #jobs {
       height: 920px; }
       main #jobs #btnCv {
@@ -700,7 +731,7 @@ footer {
             width: 100%; }
       main #sponsors .modal {
         width: 100%; } }
-@media (min-width: 576px) and (max-width: 650px) {
+@media (min-width: 576px) and (max-width: 670px) {
   header {
     background-color: #097969; }
     header nav ul {
@@ -741,10 +772,10 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 600px; }
+      height: 700px; }
     main #products {
       width: 100%;
-      height: 900px;
+      height: 2200px;
       margin-top: 70px; }
       main #products #title3 {
         padding-left: 5px;
@@ -754,23 +785,26 @@ footer {
         margin-top: 5px; }
         main #products #cardContainer .cardsDiv {
           display: flex;
-          flex-direction: row;
-          height: 400px;
+          flex-direction: column;
+          height: 1000px;
           width: 100%;
           margin-top: 20px;
           justify-content: space-between; }
           main #products #cardContainer .cardsDiv .card {
-            width: 200px;
+            width: 100%;
             height: 260px;
-            margin-left: 3px;
             border-radius: 0;
             border-color: #097969;
-            margin-top: 0px; }
+            margin-top: 70px; }
+            main #products #cardContainer .cardsDiv .card:hover {
+              background-color: unset !important;
+              transition: unset !important; }
+              main #products #cardContainer .cardsDiv .card:hover .cardTitle {
+                display: none; }
+              main #products #cardContainer .cardsDiv .card:hover .cardImg {
+                display: block; }
             main #products #cardContainer .cardsDiv .card .cardImg {
               height: 100%; }
-            main #products #cardContainer .cardsDiv .card .cardTitle {
-              margin: 120px 0 0 17.5%;
-              display: none; }
     main #jobs {
       height: 920px; }
       main #jobs #btnCv {
@@ -791,7 +825,7 @@ footer {
             width: 100%; }
       main #sponsors .modal {
         width: 100%; } }
-@media (min-width: 650px) and (max-width: 767.98px) {
+@media (min-width: 670px) and (max-width: 767.98px) {
   header {
     background-color: #097969; }
     header nav ul {
@@ -832,7 +866,7 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 700px; }
+      height: 750px; }
     main #products {
       width: 100%;
       height: 900px;
@@ -906,7 +940,7 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 380px; }
+      height: 480px; }
     main #products {
       width: 100%;
       height: 900px;
@@ -984,10 +1018,10 @@ footer {
         align-items: center;
         justify-content: center; }
     main #about {
-      height: 380px; }
+      height: 480px; }
     main #products {
       width: 100%;
-      height: 900px;
+      height: 800px;
       margin-top: 70px; }
       main #products #title3 {
         padding-left: 5px;

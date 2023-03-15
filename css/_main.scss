@@ -98,10 +98,39 @@ main {
       font-family: $font2;
       font-size: 18px;
       margin-top: 5%;
+
+      .linkProject{
+        color: $green;
+      }
     }
 
     #imgAbout {
       width: 100%;
+    }
+
+    .modal {
+      width: 100%;
+
+      .modal-content {
+        background-color: $green;
+        color: $white;
+
+        .modal-title {
+          text-transform: uppercase;
+          font-family: $font1;
+        }
+
+        .modal-body > .text {
+          font-family: $font2;
+          font-size: 18px;
+        }
+
+        .btn-modal {
+          background: $green;
+          border: solid 1px $white;
+          color: $white;
+        }
+      }
     }
   }
 
