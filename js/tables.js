@@ -1,98 +1,103 @@
-let card = document.getElementsByClassName("card");
+let nomeProd = 0;
+// Container Card e Container Tabela
 let cardContainer = document.getElementById("cardContainer");
+let tabelaContainer = document.getElementById("tableContainer");
 
-function tabelaPadaria() {
-  for (let i = 0; i < 6; i++) {
-    card[i].style.display = "none";
+// Tabela
+let tabela = document.getElementById("tabela");
+let thead = criaElemento("thead");
+let linhaHead = criaElemento("tr");
+let tbody = criaElemento("tbody");
+let indicesTabela = ["Número do Produto", "Nome do Produto", "Preço"];
+let linhasTabela = [];
+// Matriz de produtos
+let tabelaPadaria = [
+  [1, "Pão Doce", "R$ 0,50 (Unidade)"],
+  [2, "Pão Francês", "R$ 0,70 (Unidade)"],
+  [3, "Pão de Queijo", "R$ 0,80 (Unidade)"],
+  [4, "Pão de Forma", "R$ 7,00"],
+  [5, "Sonho", "R$ 3,00"],
+  [6, "Queijo Mussarela 100g", "R$ 4,00"],
+  [7, "Peito de Peru 100g", "R$ 5,00"],
+  [8, "Presunto 100g", "R$ 3,50"],
+  [9, "Bolo", "R$ 20,00"],
+  [10, "Pacote de Café", "R$ 14,00"],
+  [11, "Pacote de Açúcar", "R$ 5,00"],
+  [12, "Manteiga", "R$ 8,50"],
+  [13, "Requeijão", 'R$ 9,00']
+];
+
+let tabelaCarne = [
+  [1, "Filé Mignon", "R$ 69,98"],
+  [2, "Maminha", "R$ 38,99"],
+  [3, "Picanha", "R$ 69,29"],
+  [4, "Coxão mole", "R$ 39,99"],
+  [5, "Patinho", "R$ 39,99"],
+  [6, "Contrafilé", "R$ 41,98"],
+  [7, "Alcatra", "R$ 49,00"],
+  [8, "Costela", "R$ 44,90"],
+  [9, "Paleta", "R$ 29,98"],
+  [10, "Chuleta", "R$ 35,80"],
+  [11, "Coxão Duro", "R$ 34,99"],
+  [12, "Filé de Frango", "R$ 20,99"],
+  [13, "Frango a Passarinho", "R$ 24,99"]
+];
+
+function criaElemento(elemento) {
+  return document.createElement(elemento);
+}
+
+function criaCel(elemento, conteudo) {
+  elemento = criaElemento(elemento);
+  elemento.textContent = conteudo;
+
+  return elemento;
+}
+
+function criaThead() {
+  for (let i = 0; i < indicesTabela.length; i++) {
+    let th = criaCel("th", indicesTabela[i]);
+    th.classList.add("scope");
+    linhaHead.appendChild(th);
   }
 
-  cardContainer.innerHTML = `
-  <table class="table table-responsive table-bordered table-hover">
-  <thead>
-    <tr class="textWhite">
-      <th scope="col">Número do Produto</th>
-      <th scope="col">Nome do Produto</th>
-      <th scope="col">Preço</th>
-    </tr>
-  </thead>
-  <tbody class="textWhite">
-    <tr>
-      <th scope="row">1</th>
-      <td>Pão Doce</td>
-      <td>R$ 0,50 (Unidade)</td>
-    </tr>
+  thead.appendChild(linhaHead);
+  tabela.appendChild(thead);
+}
 
-    <tr>
-      <th scope="row">2</th>
-      <td>Pão Francês</td>
-      <td>R$ 0,70 (Unidade)</td>
-    </tr>
+function criaTbody() {
+  for (let i = 0; i < linhasTabela.length; i++) {
+    let linhaBody = criaElemento("tr");
 
-    <tr>
-      <th scope="row">3</th>
-      <td>Pão de queijo</td>
-      <td>R$ 0,80 (Unidade)</td>
-    </tr>
+    for (let j = 0; j < linhasTabela[i].length; j++) {
+      let cel = criaCel("td", linhasTabela[i][j]);
+      linhaBody.appendChild(cel);
+    }
 
-    <tr>
-      <th scope="row">4</th>
-      <td>Sonho</td>
-      <td>R$ 3,00 (Unidade)</td>
-    </tr>
+    tbody.appendChild(linhaBody);
+  }
 
-    <tr>
-      <th scope="row">5</th>
-      <td>Queijo Mussarela 100g</td>
-      <td>R$ 4,00</td>
-    </tr>
+  tabela.appendChild(tbody);
+}
 
-    <tr>
-      <th scope="row">6</th>
-      <td>Peito de Peru 100g</td>
-      <td>R$ 5,00</td>
-    </tr>
+function alteraNomeProd(n) {
+  nomeProd = n;
+  criaTabela();
+}
 
-    <tr>
-      <th scope="row">7</th>
-      <td>Presunto 100g</td>
-      <td>R$ 3,50</td>
-    </tr>
+function criaTabela() {
+  if (nomeProd == 1) {
+    linhasTabela = tabelaPadaria;
+    
+  } else if (nomeProd == 2) {
+    linhasTabela = tabelaCarne;
+  }
+  nomeProd = 0;
+  criaThead();
+  criaTbody();
 
-    <tr>
-      <th scope="row">8</th>
-      <td>Bolo</td>
-      <td>R$ 20,00</td>
-    </tr>
-
-    <tr>
-      <th scope="row">9</th>
-      <td>Pacote de Café</td>
-      <td>R$ 14,00</td>
-    </tr>
-
-    <tr>
-      <th scope="row">10</th>
-      <td>Pacote de Açúcar</td>
-      <td>R$ 3,50</td>
-    </tr>
-
-    <tr>
-      <th scope="row">11</th>
-      <td>Manteiga</td>
-      <td>R$ 8,50</td>
-    </tr>
-
-    <tr>
-      <th scope="row">12</th>
-      <td>Salgado</td>
-      <td>R$ 4,00</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="d-flex justify-content-center align-items-center w-100">
-  <button class="w-50" style="color: #097969; background-color: #fff; border: solid 1px #097969; border-radius: 5px;" onclick="fechaTabela()">Voltar</button>
-</div>`;
+  cardContainer.style.display = "none";
+  tabelaContainer.style.display = "block";
 }
 
 function fechaTabela() {

@@ -74,7 +74,7 @@
 
                         <div id="btnDiv">
                             <a href="#products" class="btnWelcome pt-1">Produtos</a>
-                            <a href="#" class="btnWelcome pt-1">Endereço</a>
+                            <a href="#footer" class="btnWelcome pt-***************1">Endereço</a>
                         </div>
                     </div>
                 </div>
@@ -177,12 +177,12 @@
                 <div class="col-12 d-flex justify-content-center">
                     <div id="cardContainer" data-anime="right">
                         <div class="cardsDiv">
-                            <div class="card" onclick="tabelaPadaria()">
+                            <div class="card" onclick="alteraNomeProd(1)">
                                 <img class="cardImg" src="./images/desktop/pao.jpg">
                                 <h3 class="cardTitle">Padaria</h3>
                             </div>
 
-                            <div class="card">
+                            <div class="card" onclick="alteraNomeProd(2)">
                                 <img class="cardImg" src="./images/desktop/carne.jpg">
                                 <h3 class="cardTitle">Carnes</h3>
                             </div>
@@ -210,9 +210,17 @@
                             </div>
                         </div>
                     </div>
+
+                    <div id="tableContainer" data-anime="right">
+                        <table class="table table-responsive table-bordered table-hover text-white" id="tabela">
+                        </table>
+
+                        <button class="btnCloseTable" onclick="fechaTabela()">Voltar</button>
+                    </div>
                 </div>
             </div>
         </section>
+
 
         <section class="container" id="jobs">
             <div class="row">

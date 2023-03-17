@@ -72,10 +72,11 @@
     #products {
       width: 100%;
       height: 1800px;
-      margin-top: 70px;
+      // margin-top: 30px;
 
       #cardContainer {
         width: 100%;
+        height: 100%;
         margin-top: 30px;
 
         .cardsDiv {
@@ -111,6 +112,27 @@
           }
         }
       }
+
+      #tableContainer {
+        height: 1700px;
+        width: 100%;
+        display: none;
+
+        #tabela {
+          height: 1650px;
+          width: 100%;
+          font-size: 20px;
+
+          tbody > tr > td {
+            padding-top: 35px !important;
+          }
+        }
+
+        .btnCloseTable {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
     }
 
     #jobs {
@@ -132,7 +154,7 @@
 
     // Patrocinadores
     #sponsors {
-      height: 1000px;
+      height: 1130px;
       margin-top: 10px;
 
       #sponsorsImages {
@@ -303,6 +325,27 @@
               height: 100%;
             }
           }
+        }
+      }
+
+      #tableContainer {
+        height: 1700px;
+        width: 100%;
+        display: none;
+
+        #tabela {
+          height: 1650px;
+          width: 100%;
+          font-size: 20px;
+
+          tbody > tr > td {
+            padding-top: 35px !important;
+          }
+        }
+
+        .btnCloseTable {
+          width: 100%;
+          margin-left: 0;
         }
       }
     }
@@ -489,6 +532,27 @@
           }
         }
       }
+
+      #tableContainer {
+        height: 2000px;
+        width: 100%;
+        display: none;
+
+        #tabela {
+          height: 1950px;
+          width: 100%;
+          font-size: 20px;
+
+          tbody > tr > td {
+            padding-top: 48px !important;
+          }
+        }
+
+        .btnCloseTable {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
     }
 
     #jobs {
@@ -501,7 +565,7 @@
 
     // Patrocinadores
     #sponsors {
-      height: 1150px;
+      height: 1450px;
       margin-top: 10px;
 
       #sponsorsImages {
@@ -670,6 +734,27 @@
               height: 100%;
             }
           }
+        }
+      }
+
+      #tableContainer {
+        height: 2000px;
+        width: 100%;
+        display: none;
+
+        #tabela {
+          height: 1950px;
+          width: 100%;
+          font-size: 20px;
+
+          tbody > tr > td {
+            padding-top: 48px !important;
+          }
+        }
+
+        .btnCloseTable {
+          width: 100%;
+          margin-left: 0;
         }
       }
     }
@@ -858,6 +943,27 @@
           }
         }
       }
+
+      #tableContainer {
+        height: 2000px;
+        width: 100%;
+        display: none;
+
+        #tabela {
+          height: 1950px;
+          width: 100%;
+          font-size: 20px;
+
+          tbody > tr > td {
+            padding-top: 48px !important;
+          }
+        }
+
+        .btnCloseTable {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
     }
 
     #jobs {
@@ -870,7 +976,7 @@
 
     // Patrocinadores
     #sponsors {
-      height: 1150px;
+      height: 1750px;
       margin-top: 10px;
 
       #sponsorsImages {
@@ -892,6 +998,39 @@
 
       .modal {
         width: 100%;
+      }
+    }
+  }
+
+  footer {
+    height: 500px;
+    background-color: $green;
+
+    #footerContainer {
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      #footerLogo {
+        width: 82%;
+        margin-left: 8%;
+      }
+
+      #footerTitle {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      .footerText {
+        text-align: center;
+
+        .footerIcon {
+          font-size: 22px;
+          margin-right: 7px;
+        }
+      }
+
+      #copyright {
+        margin-left: 0px;
       }
     }
   }
@@ -1012,6 +1151,27 @@
           }
         }
       }
+
+      #tableContainer {
+        height: 2000px;
+        width: 100%;
+        display: none;
+
+        #tabela {
+          height: 1950px;
+          width: 100%;
+          font-size: 20px;
+
+          tbody > tr > td {
+            padding-top: 48px !important;
+          }
+        }
+
+        .btnCloseTable {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
     }
 
     #jobs {
@@ -1024,19 +1184,20 @@
 
     // Patrocinadores
     #sponsors {
-      height: 1150px;
-      margin-top: 10px;
+      height: 1800px;
 
       #sponsorsImages {
+        height: 1700px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin-top: 35px;
+        justify-content: space-between;
+        margin-top: 50px;
 
         .imgSponsors {
           width: 100%;
-          margin-left: 0px;
-          margin-top: 5px;
+          height: 20%;
+          margin-top: 20px;
+          margin-left: 0;
 
           &:hover {
             width: 100%;
@@ -1046,6 +1207,39 @@
 
       .modal {
         width: 100%;
+      }
+    }
+  }
+
+  footer {
+    height: 500px;
+    background-color: $green;
+
+    #footerContainer {
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      #footerLogo {
+        width: 82%;
+        margin-left: 8%;
+      }
+
+      #footerTitle {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      .footerText {
+        text-align: center;
+
+        .footerIcon {
+          font-size: 22px;
+          margin-right: 7px;
+        }
+      }
+
+      #copyright {
+        margin-left: 0px;
       }
     }
   }
@@ -1125,7 +1319,7 @@
     //Produtos
     #products {
       width: 100%;
-      height: 900px;
+      height: 2200px;
       margin-top: 70px;
 
       #cardContainer {
@@ -1134,28 +1328,57 @@
 
         .cardsDiv {
           display: flex;
-          flex-direction: row;
-          height: 400px;
+          flex-direction: column;
+          height: 1000px;
           width: 100%;
           margin-top: 20px;
           justify-content: space-between;
 
           .card {
-            width: 230px;
-            height: 260px;
-            margin-left: 3px;
+            width: 100%;
+            height: 280px;
             border-radius: 0;
             border-color: $green;
-            margin-top: 0px;
+            margin-top: 70px;
+
+            &:hover {
+              background-color: unset !important;
+              transition: unset !important;
+
+              .cardTitle {
+                display: none;
+              }
+
+              .cardImg {
+                display: block;
+              }
+            }
 
             .cardImg {
               height: 100%;
             }
-
-            .cardTitle {
-              margin: 120px 0 0 23%;
-            }
           }
+        }
+      }
+
+      #tableContainer {
+        height: 2000px;
+        width: 100%;
+        display: none;
+
+        #tabela {
+          height: 1950px;
+          width: 100%;
+          font-size: 20px;
+
+          tbody > tr > td {
+            padding-top: 48px !important;
+          }
+        }
+
+        .btnCloseTable {
+          width: 100%;
+          margin-left: 0;
         }
       }
     }
@@ -1170,19 +1393,20 @@
 
     // Patrocinadores
     #sponsors {
-      height: 1150px;
-      margin-top: 10px;
+      height: 2000px;
 
       #sponsorsImages {
+        height: 1700px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin-top: 35px;
+        justify-content: space-between;
+        margin-top: 50px;
 
         .imgSponsors {
           width: 100%;
-          margin-left: 0px;
-          margin-top: 5px;
+          height: 20%;
+          margin-top: 20px;
+          margin-left: 0;
 
           &:hover {
             width: 100%;
@@ -1192,6 +1416,39 @@
 
       .modal {
         width: 100%;
+      }
+    }
+  }
+
+  footer {
+    height: 600px;
+    background-color: $green;
+
+    #footerContainer {
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      #footerLogo {
+        width: 82%;
+        margin-left: 8%;
+      }
+
+      #footerTitle {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      .footerText {
+        text-align: center;
+
+        .footerIcon {
+          font-size: 22px;
+          margin-right: 7px;
+        }
+      }
+
+      #copyright {
+        margin-left: 0px;
       }
     }
   }
@@ -1273,10 +1530,38 @@
             }
 
             .cardTitle {
-              margin: 120px 0 0 26.5%;
+              margin: 120px 0 0 26%;
               display: none;
             }
           }
+        }
+      }
+
+      #tableContainer {
+        height: 100%;
+        width: 100%;
+        display: none;
+
+        #tabela {
+          height: 85%;
+          width: 100%;
+          color: $white;
+          font-family: $font1;
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+        .btnCloseTable {
+          width: 35%;
+          height: 35px;
+          background-color: $white;
+          margin-left: 35%;
+          color: $green;
+          font-family: $font2;
+          font-size: 20px;
+          text-align: center;
+          border: none;
+          border-radius: 10px;
         }
       }
     }
@@ -1317,6 +1602,11 @@
         width: 100%;
       }
     }
+  }
+
+  footer {
+    height: 320px;
+    margin-top: 30px;
   }
 }
 
@@ -1407,6 +1697,11 @@
         width: 100%;
       }
     }
+  }
+
+  footer {
+    height: 320px;
+    margin-top: 60px;
   }
 }
 
